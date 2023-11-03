@@ -5,7 +5,14 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    app: "./src/index.js",
+    app: [
+      "./src/index.js",
+      /* "./constructor/Character.js",
+      "./constructor/Race/Elf.js",
+      "./constructor/Race/Human.js",
+      "./constructor/Race/Hobbit.js",
+      "./constructor/Race/Orc.js", */
+    ],
   },
   output: {
     filename: "[name].bundle.js",
@@ -25,11 +32,24 @@ module.exports = {
         test: /\.css$/,
         use: ["styles-loader", "css-loader"],
       },
+      // {
+      //   test: /\.html$/,
+      //   use: [
+      //     {
+      //       loader: "html-loader",
+      //       options: {
+      //         minimize: true,
+      //         interpolation: false,
+      //       },
+      //     },
+      //   ],
+      // },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Mon application",
+      template: "./src/index.html",
     }),
     new CleanWebpackPlugin(),
   ],

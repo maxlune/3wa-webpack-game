@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="app.bundle.js"></script>
+  </head>
+  <body>
+    <h1>Batailles de la Terre du Milieu: L'Ascension des Races</h1>
+    <div id="app">
+      <p id="characterName1">
+        <strong>Nom du personnage :</strong> <span class="name"></span><br />
+        <strong>Vie du personnage :</strong> <span class="health"></span><br />
+        <strong>Force du personnage :</strong> <span class="strength"></span>
+      </p>
+
+      <button id="attackButton">Attaquer</button>
+
+      <p id="characterName2">
+        <strong>Nom du personnage :</strong> <span class="name"></span><br />
+        <strong>Vie du personnage :</strong> <span class="health"></span><br />
+        <strong>Force du personnage :</strong> <span class="strength"></span>
+      </p>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Batailles de la Terre du Milieu: L'Ascension des Races</h1>
+    <div id="app">
+      <h2>Joueur 1</h2>
+      <form id="createCharacterForm1">
+        <label for="characterNameInput1">Entrez le nom du personnage :</label>
+        <input type="text" id="characterNameInput1" required />
+        <label for="characterRaceSelect1">Sélectionnez la race :</label>
+        <select id="characterRaceSelect1" required>
+          <option value="">--Choisissez une race--</option>
+          <option value="Human">Humain</option>
+          <option value="Orc">Orc</option>
+          <option value="Elf">Elfe</option>
+          <option value="Hobbit">Hobbit</option>
+        </select>
+        <div id="characterDisplay">
+          <h3>Details du personnage :</h3>
+          <p class="name"></p>
+          <p class="health"></p>
+          <p class="strength"></p>
+        </div>
+
+        <button type="submit">Créer le personnage</button>
+      </form>
+
+      <h2>Joueur 2</h2>
+      <form id="createCharacterForm2">
+        <label for="characterNameInput2">Entrez le nom du personnage :</label>
+        <input type="text" id="characterNameInput2" required />
+        <label for="characterRaceSelect2">Sélectionnez la race :</label>
+        <select id="characterRaceSelect2" required>
+          <option value="">--Choisissez une race--</option>
+          <option value="Human">Humain</option>
+          <option value="Orc">Orc</option>
+          <option value="Elf">Elfe</option>
+          <option value="Hobbit">Hobbit</option>
+        </select>
+        <div id="characterDisplay">
+          <h3>Details du personnage :</h3>
+          <p class="name"></p>
+          <p class="health"></p>
+          <p class="strength"></p>
+        </div>
+
+        <button type="submit">Créer le personnage</button>
+      </form>
+
+      <button id="startGameButton">Démarrer le jeu</button>
+    </div>
+  </body>
+</html>
